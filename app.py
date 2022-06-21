@@ -147,3 +147,12 @@ if authentication_status:
                 </style>
                 """
     st.markdown(hide_st_style, unsafe_allow_html=True)
+
+    about = st.sidebar.selectbox('Sobre o sistema', ["Selecione...","Sobre", "Termos de Uso", "Política de Privacidade"])
+    if about == "Sobre":
+        st.header("Sobre o sistema")
+    if about == "Termos de Uso":
+        st.header("Termos de uso do sistema")
+    if about == "Política de Privacidade":
+        st.header("Política de Privacidade do sistema")
+
